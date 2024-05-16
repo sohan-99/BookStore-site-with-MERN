@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "name": "Fantasy Adventure",
+        "name": "Fantasy",
         "title": "Embark on a fantastical journey filled with magic, dragons, and epic quests.",
         "price": 8.99,
         "category": "Fantasy",
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "name": "Sci-Fi Chronicle",
+        "name": "Sci-Fi",
         "title": "Explore distant galaxies and futuristic worlds in this gripping sci-fi adventure.",
         "price": 12.99,
         "category": "Science Fiction",
@@ -34,14 +34,14 @@
     {
         "id": 5,
         "name": "Adventure Quest",
-        "title": "Join brave heroes on an exhilarating journey filled with danger, discovery, and triumph.",
+        "title": "Join brave heroes on an exhilarating journey filled with danger, discovery",
         "price": 9.99,
         "category": "Free",
         "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1715872258~exp=1715875858~hmac=741f46970f06216a8e6b254be4d55fdcf93ab73a605c6ea7cef79d7e7990a32b&w=360"
     },
     {
         "id": 6,
-        "name": "Historical Saga",
+        "name": "Historical",
         "title": "Step into the past and witness the sweeping drama of history come to life.",
         "price": 11.99,
         "category": "Historical Fiction",
@@ -73,8 +73,8 @@
     },
     {
         "id": 10,
-        "name": "Comedy Chronicle",
-        "title": "Laugh out loud with hilarious antics and comedic escapades in these uproarious tales.",
+        "name": "Comedy",
+        "title": "Laugh out loud with hilarious antics comedic escapades in these uproarious tales.",
         "price": 7.99,
         "category": "Comedy",
         "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1715872258~exp=1715875858~hmac=741f46970f06216a8e6b254be4d55fdcf93ab73a605c6ea7cef79d7e7990a32b&w=360"
