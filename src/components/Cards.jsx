@@ -1,0 +1,29 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+import React from 'react'
+
+function Cards({ item }) {
+
+    return (
+        <>
+            <div className="card w-80 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border">
+                <figure>
+                    <img src={item.image} alt="Shoes" />
+                </figure>
+                <div className="card-body">
+                    <h2 className="card-title">
+                        {item.name}
+                        <div className="badge badge-secondary">Free</div>
+                    </h2>
+                    <p>{item.title}</p>
+                    <div className="card-actions justify-between">
+                        <div className="badge badge-outline mt-2">${item.price}</div>
+                        <div className=" cursor-pointer px-2 py-1 rounded-3xl border-[2px] hover:bg-pink-500 hover:text-white duration-200">Buy</div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Cards

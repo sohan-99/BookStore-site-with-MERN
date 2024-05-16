@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
 import { useState } from "react";
-
 function Navbar() {
+
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
@@ -39,7 +39,7 @@ function Navbar() {
         <a href="/">Home</a>
       </li>
       <li>
-        <a href="/course">Course</a>
+        <a href="/course">Books</a>
       </li>
       <li>
         <a>Contact</a>
