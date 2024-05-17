@@ -86,5 +86,13 @@
         "price": 9.99,
         "category": "Free",
         "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1715872258~exp=1715875858~hmac=741f46970f06216a8e6b254be4d55fdcf93ab73a605c6ea7cef79d7e7990a32b&w=360"
+    },
+    {
+        "id": 12,
+        "name": "Historical Fiction",
+        "title": "Immerse yourself in the rich tapestry of history with these  fiction tales.",
+        "price": 9.99,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1715872258~exp=1715875858~hmac=741f46970f06216a8e6b254be4d55fdcf93ab73a605c6ea7cef79d7e7990a32b&w=360"
     }
 ]
