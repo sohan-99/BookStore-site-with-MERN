@@ -1,10 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import React from 'react'
-import list from '../../public/list.json'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import Cards from './Cards';
+import axios from "axios";
 function Course() {
+    const [book, setBook] = useState([]);
+    useEffect(() => {
+        const getBook = async () => {
+            try {
+                const res = await axios.get("http://localhost:4001/book");
+                console.log(res.data);
+                setBook(res.data);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+        getBook();
+    }, []);
     return (
         <>
             <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4">
@@ -14,13 +27,7 @@ function Course() {
                         <span className="text-pink-500"> Here! :</span>
                     </h1>
                     <p className="mt-12">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
-                        assumenda? Repellendus, iste corrupti? Tempore laudantium
-                        repellendus accusamus accusantium sed architecto odio, nisi expedita
-                        quas quidem nesciunt debitis dolore non aspernatur praesentium
-                        assumenda sint quibusdam, perspiciatis, explicabo sequi fugiat amet
-                        animi eos aut. Nobis quisquam reiciendis sunt quis sed magnam
-                        consequatur!
+                    Reading books opens up a world of imagination and knowledge. Whether it's diving into a thrilling mystery, exploring distant galaxies in science fiction, or unraveling the complexities of historical events, each page offers a new adventure. Books not only entertain but also educate, providing insights into different cultures, philosophies, and life experiences. Engaging with literature can enhance empathy, improve cognitive skills, and offer a respite from the hustle and bustle of everyday life. In the quiet moments spent with a book, readers can find a sense of calm and inspiration, making the act of reading a cherished pastime for many. 
                     </p>
                     <Link to="/">
                         <button className="mt-6 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
@@ -30,7 +37,7 @@ function Course() {
                 </div>
                 <div>
                     <div className="mt-12 grid grid-cols-1 md:grid-cols-3">
-                        {list.map((item) => (
+                        {book.map((item) => (
                             <Cards key={item.id} item={item} />
                         ))}
                     </div>
