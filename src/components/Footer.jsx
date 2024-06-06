@@ -9,8 +9,8 @@ function Footer() {
                     <h6 className="footer-title">Connect with Us</h6>
                     <a className="link link-hover">Purana Paltan, Dhaka 1000
                     </a>
-                    <a className="link link-hover">Customer Care:01319106098</a>
-                    <a className="link link-hover">Sales:01896199122</a>
+                    <a className="link link-hover">Customer Care:01722562608</a>
+                    <a className="link link-hover">Sales:01761007374</a>
                     <a className="link link-hover">Hotline:19685</a>
                     <a className="link link-hover">Email:support@bdbooks.net</a>
                 </nav>
